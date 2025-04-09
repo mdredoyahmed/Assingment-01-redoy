@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Web Landing Page</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; background-color: white; padding: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .logo { font-size: 1.5rem; font-weight: bold; color: #333; }
+    .nav-links { list-style: none; display: flex; gap: 1rem; }
+    .nav-links li { cursor: pointer; transition: color 0.3s; }
+    .nav-links li:hover { color: #555; }
+    .search-bar { flex: 1; margin: 0 1rem; }
+    .search-input { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px; }
+    .icons { display: flex; gap: 1rem; }
+    .icon { font-size: 1.5rem; cursor: pointer; transition: color 0.3s; }
+    .icon:hover { color: #555; }
+    .hero { display: flex; align-items: center; justify-content: center; height: 80vh; background: url('https://source.unsplash.com/1600x900/?shopping') no-repeat center center/cover; color: white; text-align: center; }
+    .hero-content { background: rgba(0, 0, 0, 0.5); padding: 2rem; border-radius: 10px; }
+    .hero h1 { font-size: 3rem; }
+    .hero p { font-size: 1.2rem; margin: 1rem 0; }
+    .hero button { padding: 0.75rem 1.5rem; border: none; background: orange; color: white; font-size: 1.2rem; cursor: pointer; border-radius: 5px; }
+    .hero button:hover { background: darkorange; }
+    .featured { text-align: center; padding: 3rem 1rem; }
+    .featured h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .product-grid { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+    .product { background: white; padding: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; text-align: center; width: 250px; }
+    .product img { width: 100%; border-radius: 10px; }
+    .product h3 { margin: 1rem 0; }
+    .product button { padding: 0.5rem 1rem; border: none; background: orange; color: white; cursor: pointer; border-radius: 5px; }
+    .product button:hover { background: darkorange; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">ShopMate</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>Shop</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search for products...">
+    </div>
+    <div class="icons">
+      <span class="icon">🛒</span>
+      <span class="icon">👤</span>
+    </div>
+  </nav>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to ShopMate</h1>
+      <p>Find the best deals on your favorite products!</p>
+      <button>Shop Now</button>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://source.unsplash.com/250x250/?electronics" alt="Product 1">
+        <h3>Smartphone</h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/250x250/?shoes" alt="Product 2">
+        <h3>Running Shoes</h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/250x250/?watch" alt="Product 3">
+        <h3>Smart Watch</h3>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
